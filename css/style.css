@@ -254,7 +254,7 @@ button{
     padding: 26px 0 56px 0;
 }
 
-.slider__buttons button{
+.slider__buttons a{
     padding: 11px 58px;
     border: 1px solid #0DBC91;
     border-radius: 50px;
@@ -273,6 +273,7 @@ button{
 .slider__more-btn{
     color: #0DBC91;
     cursor: pointer;
+    margin-left: 14px;
 }
 
 .slider__more-btn:hover{
@@ -338,10 +339,6 @@ button{
     transform: rotate(-45deg);
 }
 
-.slider__next::after:hover{
-    background: #0DBC91 !important;
-}
-
 .slider__division{
     margin: 0;
     color: #C0C0C0;
@@ -349,6 +346,79 @@ button{
 
 .slider__amount-item{
     color:#000;
+}
+
+.pop-up{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(69, 146, 127, 0.9);
+    z-index: 20;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform .5s, opacity .5s;
+    overflow: hidden;    
+}
+
+.pop-up.active-form{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.pop-up__container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pop-up__inner{
+    margin: auto;
+    width: 500px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 100px 15px;
+    text-align: center;
+    position: relative;
+}
+
+.pop-up__inner p{
+    font-size: 28px;
+    font-weight: 700;
+    color: #08664F;
+}
+
+.pop-up__inner input{
+    display: block;
+    margin: 25px auto 0 auto;
+    width: 350px;
+    padding: 15px 30px;
+    background-color: #e1e1e1;
+    border-color: #0DBC91;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.pop-up__inner button{
+    padding: 14px 30px;
+    color: #fff;
+    background: #08664F;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.pop-up__inner button:hover{
+    background: #0DBC91;
+}
+
+.pop-up__close{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
 }
 
 .footer{
@@ -565,7 +635,7 @@ button{
         gap: 6px;
     }
 
-    .slider__buttons button{
+    .slider__buttons a{
         padding: 11px 27px;
     }
 
