@@ -1,6 +1,8 @@
 let offset = 0;
 const sliderItems = document.querySelector('.slider__items');
 let width;
+const popUp = document.getElementById('pop-up');
+
 document.querySelector('.slider__next').addEventListener('click', function(){
   width = document.querySelector('.slider__item').clientWidth;
   if (width == 1140){
@@ -83,4 +85,13 @@ document.querySelector('.slider__prev').addEventListener('click', function(){
 
 document.getElementById("menu__btn").addEventListener('click', () =>{
   document.querySelector('header').classList.toggle('open');
+})
+
+document.getElementById('open_pop-up').addEventListener('click', function(e){
+  e.preventDefault();
+  popUp.classList.add('active-form');
+})
+
+document.getElementById('pop-up__close').addEventListener('click', () => {
+  popUp.classList.remove('active-form');
 })
