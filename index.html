@@ -35,7 +35,7 @@
                     <img src="images/whatsapp.svg" alt="" class="whatsapp__img">
                     <p class="whatsapp-number">+7(863) 000 00 00</p>
                 </a>
-                <a href="#" class="registration-btn">
+                <a href="#" class="registration-btn" id="open_pop-up">
                     Записаться на прием
                 </a>
             </div>
@@ -58,7 +58,7 @@
                             <a href="#" class="menu__link">Контакты</a>
                         </li>
                     </ul>
-                    <a href="#" class="nav-btn">
+                    <a href="#" class="nav-btn" id="open_pop-up">
                         Записаться на прием
                     </a>
                 </nav>
@@ -113,8 +113,12 @@
                                 <span>3500₽</span>
                             </p>
                             <div class="slider__buttons">
-                                <button class="slider__registr-button">Записаться</button>
-                                <button class="slider__more-btn">Подробнее</button>
+                                <a href="#" class="slider__registr-button" id="open_pop-up">
+                                    Записаться
+                                </a>
+                                <a href="#" class="slider__more-btn">
+                                    Подробнее
+                                </a>
                             </div>
                         </div>
                         <img src="images/doctor-working.jpg" alt="slide 1" class="slider__img">
@@ -142,8 +146,12 @@
                                 <span>3500₽</span>
                             </p>
                             <div class="slider__buttons">
-                                <button class="slider__registr-button">Записаться</button>
-                                <button class="slider__more-btn">Подробнее</button>
+                                <a href="#" class="slider__registr-button" id="open_pop-up">
+                                    Записаться
+                                </a>
+                                <a href="#" class="slider__more-btn">
+                                    Подробнее
+                                </a>
                             </div>
                         </div>
                         <img src="images/doctor-working.jpg" alt="slide 2" class="slider__img">
@@ -171,8 +179,12 @@
                                 <span>3500₽</span>
                             </p>
                             <div class="slider__buttons">
-                                <button class="slider__registr-button">Записаться</button>
-                                <button class="slider__more-btn">Подробнее</button>
+                                <a href="#" class="slider__registr-button" id="open_pop-up">
+                                    Записаться
+                                </a>
+                                <a href="#" class="slider__more-btn">
+                                    Подробнее
+                                </a>
                             </div>
                         </div>
                         <img src="images/doctor-working.jpg" alt="slide 3" class="slider__img">
@@ -200,8 +212,12 @@
                                 <span>3500₽</span>
                             </p>
                             <div class="slider__buttons">
-                                <button class="slider__registr-button">Записаться</button>
-                                <button class="slider__more-btn">Подробнее</button>
+                                <a href="#" class="slider__registr-button" id="open_pop-up">
+                                    Записаться
+                                </a>
+                                <a href="#" class="slider__more-btn">
+                                    Подробнее
+                                </a>
                             </div>
                         </div>
                         <img src="images/doctor-working.jpg" alt="slide 4" class="slider__img">
@@ -215,6 +231,21 @@
                     / 4
                 </p>
                 <div class="slider__next"></div>
+            </div>
+        </div>
+
+        <div class="pop-up" id="pop-up">
+            <div class="pop-up__container">
+                <div class="pop-up__inner">
+                    <p>Запись на прием</p>
+                    <form action="">
+                        <input type="text" placeholder="Телефон для связи">
+                        <input type="text" placeholder="Имя">
+                        <input type="text" placeholder="Фамилия">
+                        <button>Отправить</button>
+                    </form>
+                    <div class="pop-up__close" id="pop-up__close">&#10006</div>
+                </div>
             </div>
         </div>
     </main>
