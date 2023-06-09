@@ -232,12 +232,12 @@ button
 
 .slider__buttons 
 	padding: 26px 0 56px 0
-	button 
+	a 
 		padding: 11px 58px
 		border: 1px solid #0DBC91
 		border-radius: 50px
 	
-	button 
+	a 
 		padding: 11px 27px
 	
 
@@ -252,6 +252,7 @@ button
 .slider__more-btn 
 	color: #0DBC91
 	cursor: pointer
+	margin-left: 14px
 	&:hover 
 		background: #0DBC91
 		color: #fff
@@ -295,9 +296,6 @@ button
 	border-top: 3px solid #E1E1E1
 	right: 0
 	transform: rotate(45deg)
-	&:hover 
-		background: #0DBC91 
-	
 
 .slider__prev::after 
 	border-left: 3px solid #E1E1E1
@@ -310,6 +308,70 @@ button
 
 .slider__amount-item 
 	color: #000
+
+.pop-up 
+	width: 100%
+	height: 100%
+	position: fixed
+	left: 0
+	top: 0
+	background: rgba(69, 146, 127, 0.9)
+	z-index: 20
+	transform: translateY(-100%)
+	opacity: 0
+	transition: transform .5s, opacity .5s
+	overflow: hidden
+	&.active-form 
+		transform: translateY(0)
+		opacity: 1
+	
+	&__container 
+		display: flex
+		width: 100%
+		height: 100%
+	
+	&__inner 
+		margin: auto
+		width: 500px
+		background: #fff
+		border-radius: 5px
+		padding: 100px 15px
+		text-align: center
+		position: relative
+		p 
+			font-size: 28px
+			font-weight: 700
+			color: #08664F
+		
+		input 
+			display: block
+			margin: 25px auto 0 auto
+			width: 350px
+			padding: 15px 30px
+			background-color: #e1e1e1
+			border-color: #0DBC91
+			border-radius: 5px
+			font-size: 16px
+		
+		button 
+			padding: 14px 30px
+			color: #fff
+			background: #08664F
+			border-radius: 50px
+			font-size: 16px
+			margin-top: 25px
+			&:hover 
+				background: #0DBC91
+			
+		
+	
+	&__close 
+		cursor: pointer
+		position: absolute
+		top: 20px
+		right: 20px
+		font-size: 24px
+	
 
 .footer 
 	background: #08664F
