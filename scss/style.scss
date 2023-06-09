@@ -1,0 +1,500 @@
+html 
+	margin: 0
+	padding: 0
+	font-family: 'PT Sans Caption', sans-serif
+	font-weight: 400
+	font-size: 14px
+	line-height: 1.3
+
+body 
+	margin: 0
+	padding: 0
+
+a 
+	text-decoration: none
+
+ul 
+	padding: 0
+	margin: 0
+	list-style: none
+
+li 
+	padding: 0
+	margin: 0
+
+button 
+	list-style: none
+	border: none
+	background: #fff
+
+.header-up 
+	display: flex
+	height: 67px
+	align-items: center
+	margin: 0 390px
+
+.map_link 
+	margin-left: 21px
+	display: flex
+
+.map__img 
+	margin-top: 16px
+	padding: 0
+
+.map__adress 
+	margin-left: 7px
+	color: #000
+	span 
+		color: #868686
+	
+	span 
+		display: none
+	
+
+.whatsapp-link 
+	margin-left: 490px
+	display: flex
+
+.whatsapp-number 
+	margin-left: 11px
+	color: #000
+
+.registration-btn 
+	margin-left: 35px
+	padding: 11px 24px
+	color: #fff
+	background: #0DBC91
+	border-radius: 50px
+	font-size: 14px
+	&:hover 
+		background: #00D29F
+	
+
+.nav 
+	background: #0DBC91
+	height: 43px
+	&-btn 
+		padding: 11px 24px
+		color: #1FA181
+		background: #F6F6F6
+		border-radius: 50px
+		font-weight: 700
+		font-size: 14px
+		line-height: 1.5
+		display: none
+	
+	&-btn 
+		display: block
+		width: 150px
+	
+
+.menu__btn 
+	position: relative
+	width: 37px
+	height: 26px
+	border: none
+	background-color: transparent
+	display: none
+	span 
+		position: absolute
+		width: 100%
+		height: 4px
+		background-color: #1FA181
+		left: 0
+		transition: transform .5s, opacity .5s, background-color .5s
+		&:nth-child(1) 
+			transform: translateY(-13px)
+		
+		&:nth-child(3) 
+			transform: translateY(13px)
+		
+	
+
+.header.open .menu__btn span:nth-child(1) 
+	transform: translateY(0) rotate(-45deg)
+
+.header.open .menu__btn span:nth-child(2) 
+	opacity: 0
+
+.header.open .menu__btn span:nth-child(3) 
+	transform: translateY(0) rotate(45deg)
+
+.menu 
+	display: flex
+	padding: 10px 0
+	margin-left: 390px
+	align-items: center
+	gap: 30px
+	&__link 
+		color: #fff
+		font-size: 16px
+		line-height: 1.3
+	
+	&__item 
+		padding-bottom: 10px
+	
+	&__link 
+		font-size: 16px
+		line-height: 1.5
+	
+	&__btn 
+		display: block
+		left: 17px
+	
+
+.promo__inner 
+	display: flex
+	justify-content: space-between
+	margin-bottom: 100px
+
+.promo__info 
+	margin-top: 144px
+	margin-left: 390px
+
+.promo__title 
+	font-weight: 700
+	font-size: 36px
+	max-width: 370px
+	margin-bottom: 14px
+
+.promo__discription 
+	max-width: 350px
+	font-size: 16px
+
+.slider__container 
+	width: 1140px
+	height: 440px
+	margin: 0 auto
+	overflow: hidden
+
+.slider__items 
+	width: 4560px
+	height: 440px
+	display: flex
+	position: relative
+	left: 0
+	transition: all ease 1s
+
+.slider__item 
+	width: 1140px
+	height: 440px
+	display: flex
+	position: relative
+
+.service-info 
+	max-width: 613px
+	background: #E2F0EF
+	color: #364844
+	position: relative
+	left: 0
+	top: 0
+	padding: 53px 0 56px 63px
+
+.service__name 
+	font-weight: 700
+	font-size: 38px
+	line-height: 1.4
+	text-transform: uppercase
+	padding-right: 369px
+	margin: 0
+	width: 183px
+
+.service__for-whom 
+	font-weight: 700
+	font-size: 22px
+	line-height: 1.4
+	margin: 0
+	padding-bottom: 16px
+
+.list-options 
+	list-style: inside
+	padding-bottom: 33px
+	font-size: 16px
+	line-height: 1.4
+	&__name-option::marker 
+		color: #1FA181
+	
+
+.service__price 
+	font-size: 20px
+	margin: 0
+	span 
+		font-size: 16px
+		line-height: 1.5
+		color: #868686
+		padding-left: 16px
+		text-decoration: line-through
+	
+	span 
+		font-size: 14px
+		padding-left: 10px
+	
+
+.slider__buttons 
+	padding: 26px 0 56px 0
+	button 
+		padding: 11px 58px
+		border: 1px solid #0DBC91
+		border-radius: 50px
+	
+	button 
+		padding: 11px 27px
+	
+
+.slider__registr-button 
+	background: #0DBC91
+	color: #fff
+	cursor: pointer
+	&:hover 
+		background: #00D29F
+	
+
+.slider__more-btn 
+	color: #0DBC91
+	cursor: pointer
+	&:hover 
+		background: #0DBC91
+		color: #fff
+	
+
+.slider__img 
+	position: relative
+	left: -165px
+	clip-path: polygon(47px 0, 100% 0, 100% 100%, 165px 100%)
+
+.slider__btn 
+	display: flex
+	justify-content: center
+	gap: 36px
+	margin-top: 39px
+	margin-bottom: 98px
+
+.slider__next, .slider__prev 
+	cursor: pointer
+	position: relative
+	width: 35px
+	height: 17px
+	&::before, &::after 
+		content: ''
+		position: absolute
+	
+	&::before 
+		width: 35px
+		height: 3px
+		background: #E1E1E1
+		top: 9px
+	
+	&::after 
+		width: 10px
+		height: 10px
+		top: 4px
+	
+
+.slider__next::after 
+	border-right: 3px solid #E1E1E1
+	border-top: 3px solid #E1E1E1
+	right: 0
+	transform: rotate(45deg)
+	&:hover 
+		background: #0DBC91 
+	
+
+.slider__prev::after 
+	border-left: 3px solid #E1E1E1
+	border-top: 3px solid #E1E1E1
+	transform: rotate(-45deg)
+
+.slider__division 
+	margin: 0
+	color: #C0C0C0
+
+.slider__amount-item 
+	color: #000
+
+.footer 
+	background: #08664F
+	&__inner 
+		display: flex
+		align-items: center
+		margin: 0 390px
+	
+	&__list 
+		display: flex
+	
+	&__logo 
+		margin-right: 240px
+		padding: 59px 0
+	
+	&__menu 
+		display: flex
+		gap: 30px
+		margin-right: 194px
+		margin-top: 60px
+		&__link 
+			color: #fff
+		
+	
+	&__inner 
+		display: flex
+		margin: 0
+	
+	&__list 
+		flex-direction: column
+		padding: 42px 17px
+	
+	&__logo 
+		padding: 0
+		margin: 0
+	
+	&__menu 
+		margin: 31px 0 0 0
+		flex-direction: column
+	
+
+.social 
+	display: flex
+	gap: 15px
+	&__img-item 
+		width: 23px
+		height: 23px
+	
+
+media (max-width: 376px) 
+	margin: 0
+	height: 65px
+	position: absolute
+	z-index: 4
+
+.map_link 
+	margin: 0
+
+.map__img 
+	display: none
+
+.logo__img 
+	width: 62px
+	height: 18px
+	margin-left: 59px
+
+.whatsapp-link 
+	margin-left: 0
+
+.whatsapp-number 
+	margin: 0
+	font-weight: 700
+	font-size: 16px
+	width: 138px
+	position: relative
+	z-index: 13
+	right: 48px
+	top: -10px
+
+.whatsapp__img 
+	display: none
+
+.map__adress 
+	position: relative
+	z-index: 12
+	margin: 0
+	left: 100px
+	top: 10px
+	width: 114px
+	font-size: 13px
+
+.registration-btn 
+	display: none
+
+.nav 
+	position: absolute
+	z-index: 6
+	margin-top: 65px
+	height: 100vh
+	width: 375px
+	background: rgba(69, 146, 127, 0.9)
+	padding: 48px 19px
+	left: -413px
+	transition: transform 1s
+
+.header.open .nav 
+	transform: translateX(100%)
+
+.menu 
+	margin: 0
+	display: block
+
+.promo__inner 
+	display: block
+	margin: 0
+
+.promo__info 
+	margin: 0
+	z-index: 1
+	position: absolute
+	margin-top: 379px
+	padding: 0 17px
+
+.promo__title 
+	font-size: 26px
+	margin: 0
+	width: 267px
+
+.promo__discription 
+	font-size: 14px
+
+.promo__img 
+	width: 375px
+	height: 288px
+	z-index: 3
+	position: relative
+	margin-bottom: 311px
+	margin-top: 65px
+
+.slider__container 
+	max-width: 340px
+	height: 550px
+	border-radius: 5px
+
+.slider__item 
+	width: 340px
+
+.service-info 
+	max-width: 340px
+	height: 266px
+	margin: 0
+	padding-top: 228px
+	padding-left: 23px
+
+.service__name 
+	padding: 0
+	font-size: 26px
+	margin-bottom: 5px
+
+.service__for-whom 
+	font-size: 14px
+	padding-bottom: 12px
+
+.list-options 
+	font-size: 14px
+	padding-bottom: 17px
+
+.service__price 
+	font-size: 18px
+
+.slider__buttons 
+	display: flex
+	gap: 6px
+
+.slider__more-btn 
+	background: #E2F0EF
+
+.slider__img 
+	position: absolute
+	width: 340px
+	clip-path: none
+	left: 0
+
+.social 
+	gap: 20px
+	margin-left: 119px
+	margin-bottom: 240px
+
