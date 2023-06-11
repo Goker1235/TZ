@@ -95,3 +95,33 @@ document.getElementById('open_pop-up').addEventListener('click', function(e){
 document.getElementById('pop-up__close').addEventListener('click', () => {
   popUp.classList.remove('active-form');
 })
+
+
+
+document.getElementById('nav_open_pop-up').addEventListener('click', function(e){
+  e.preventDefault();
+  popUp.classList.add('active-form');
+})
+
+
+ 
+document.getElementById('open_pop-up-1').addEventListener('click', function(e){
+  e.preventDefault();
+  popUp.classList.add('active-form');
+})
+
+document.getElementById('open_pop-up-2').addEventListener('click', function(e){
+  e.preventDefault();
+  popUp.classList.add('active-form');
+})
+
+document.getElementById('open_pop-up-3').addEventListener('click', function(e){
+  e.preventDefault();
+  popUp.classList.add('active-form');
+})
+
+document.getElementById('open_pop-up-4').addEventListener('click', function(e){
+  e.preventDefault();
+  popUp.classList.add('active-form');
+})
+
