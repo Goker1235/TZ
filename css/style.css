@@ -300,45 +300,15 @@ button{
 .slider__prev{
     cursor: pointer;
     position: relative;
-    width: 35px;
     height: 17px;
+    top: -9px;
 }
 
-.slider__next::before,
-.slider__prev::before,
-.slider__next::after,
-.slider__prev::after{
-    content:'';
-    position: absolute;
+.slider__next svg:hover,
+.slider__prev svg:hover{
+    fill: rgba(69, 146, 127);
 }
 
-.slider__next::before,
-.slider__prev::before{
-    width: 35px;
-    height: 3px;
-    background: #E1E1E1;
-    top: 9px;
-}
-
-.slider__next::after,
-.slider__prev::after{
-    width: 10px;
-    height: 10px;
-    top: 4px;
-}
-
-.slider__next::after{
-    border-right: 3px solid #E1E1E1;
-    border-top: 3px solid #E1E1E1;
-    right: 0;
-    transform: rotate(45deg);
-}
-
-.slider__prev::after{
-    border-left: 3px solid #E1E1E1;
-    border-top: 3px solid #E1E1E1;
-    transform: rotate(-45deg);
-}
 
 .slider__division{
     margin: 0;
